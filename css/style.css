@@ -1,0 +1,12 @@
+body{
+    overflow: hidden;
+    background-color: rgba(28, 110, 164,.8);
+}
+canvas{
+border: 20px inset #1C6EA4;
+border-radius: 14px;
+width: 95%;
+}
+.alto{
+    height: 100vh;
+}
