@@ -1,4 +1,11 @@
-var contexto = document.getElementById("lienzo").getContext("2d");
+var btnReload = document.querySelector("#btn")
+var tScore = document.querySelector("#tScore")
+btnReload.addEventListener("click", e=> {
+  location.reload()
+  
+  //tScore.innerHTML = "";
+});
+var contexto = document.getElementById("lienzo").getContext("2d");//<canvas id="lienzo"></canvas>
 contexto.canvas.width = 602;
 contexto.canvas.height = 295;
 var score = 0;
@@ -110,8 +117,6 @@ if(
     contexto.fillStyle = "rgba(136,0,204,1)"
     contexto.fillText("creado por Marcos Castillo",contexto.canvas.width/8,((contexto.canvas.height/2)+50))
     setTimeout(function(){
-      alert("reiniciar juego")
-      location.reload()
   }, 1000);
     
 //agrgar opcional de reiniciar o finalizar
